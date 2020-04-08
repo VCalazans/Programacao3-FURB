@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+body{
+    border: solid;
+    border-color: white;
+    border-right-width: 150px;
+    border-left-width: 150px;
+}
+
+table{
+    border: solid;
+    border-color: white;
+    border-right-width: 150px;
+    border-left-width:  300px;
+}
