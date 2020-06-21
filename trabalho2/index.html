@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html ng-app="app">
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="js/func.js"></script>
+
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 0 8px;
+            margin-top: -8px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div style="justify-content: center; align-items: center; display: flex; flex-direction: column; margin-top: 10%; border-style: ;">
+        <form style="border-style: solid; width: 550px; height: 250px;">
+            <h1>Adicionar novo Empregado.</h1>
+            <table style="margin-top: 3%; margin-left: 5%;">
+                <tr>
+                    <td>ID</td>
+                    <td><input type="text" id="id"  style="width: 150%;" /></td>
+                </tr>
+                <tr>
+                    <td>Nome</td>
+                    <td><input type="text" id="nome"  style="width: 150%;" /></td>
+                </tr>
+                <tr>
+                    <td>Salário</td>
+                    <td><input type="text" id="salario"  style="width: 50%;" /></td>
+                </tr>
+                <tr>
+                    <td>Idade</td>
+                    <td><input type="text" id="idade"  style="width: 50%;" /></td>
+                </tr>
+                <tr>
+                    <td>Avatar</td>
+                    <td style="margin-top: 50px;"><input type="text" id="avatar" ng-model="newemploye.avatar"
+                            style="width: 150%;" /></td>
+                </tr>   
+                <tr>
+                    <td><input type="hidden" ng-model="newemploye.id" /></td>
+                    <td><input type="button" value="Salvar" class="btn btn-primary" style="margin-top: 5px;"
+                            onclick="salvaContato()" /></td>
+                    <td><input type="button" value="Cancelar" class="btn btn-primary"
+                            style="margin-top: 5px; margin-left: -60px;" onclick="limparForm()"  /></td>
+                </tr>
+            </table>
+        </form>
+
+
+        <table id="tabela" style="margin-top: 10px;">
+            <script>
+                loadDoc();
+            
+            </script>
+        </table>
+
+
+    </div>
+</body>
+
+</html>
